@@ -5,12 +5,26 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.flexible-container {
+    display: flex;
+}
+
 .common-spacing {
     margin: 0 240px;
 }
 
 .primary-color {
     color: #FF42A5;
+}
+
+.primary-button {
+    border-radius: 48px;
+    background-color: #FF42A5;
+    border: none;
+    padding: calc(21rem/16) calc(40rem/16);
+    font-size: calc(20rem / 16);
+    font-weight: 600;
+    color: white;
 }
 
 /* navigation style start  */
@@ -61,4 +75,42 @@ nav {
 
 .fa-youtube {
     color: red;
+}
+
+/* bannar styles  */
+.banner-title {
+    color: #0B0223;
+    font-weight: 600;
+    font-size: calc(48rem / 16);
+    margin: 0;
+}
+
+.banner-sub-title {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: calc(95rem / 16);
+    margin: 0;
+}
+
+.banner-details .fa-solid {
+    font-size: calc(24rem / 16);
+}
+
+.banner-button-container {
+    justify-content: space-between;
+}
+
+.banner-button-container .secoundary-button {
+    background: #4EC5F7;
+}
+
+.banner-details,
+.banner-images {
+    width: 50%;
+}
+
+.banner-images img {
+    width: 100%;
 }
