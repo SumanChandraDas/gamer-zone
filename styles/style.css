@@ -78,6 +78,8 @@ nav {
 }
 
 /* bannar styles  */
+
+
 .banner-title {
     color: #0B0223;
     font-weight: 600;
@@ -113,4 +115,53 @@ nav {
 
 .banner-images img {
     width: 100%;
+}
+
+
+/* responsive design  */
+@media screen and (max-width: 576px) {
+    .common-spacing {
+        margin: 0 auto;
+    }
+
+    nav,
+    .nav-item ul {
+        flex-direction: column;
+    }
+
+    .nav-item ul li {
+
+        margin-bottom: 38px;
+    }
+
+    .banner-section {
+        flex-direction: column-reverse;
+    }
+
+    .banner-details,
+    .banner-images {
+        width: 100%;
+    }
+
+}
+
+/* teblate devises  */
+@media screen and (min-width:576px) and (max-width: 992px) {
+    .common-spacing {
+        margin: 0 auto;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .banner-section {
+        flex-direction: column-reverse;
+    }
+
+    .banner-details,
+    .banner-images {
+        width: 100%;
+    }
+
 }
